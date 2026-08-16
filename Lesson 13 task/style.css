@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000;
+    height: 50px;
+}
+
+main {
+    width: 100%;
+}
+
+.container {
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 30px;
+}
+
+.item {
+    width: calc(33.333% - 20px);
+    min-width: 220px;
+    height: 200px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: plum;
+    width: 85%;
+    height: 50px;
+    margin: 40px auto;
+    border-radius: 10px;
+}

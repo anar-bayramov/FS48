@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+        .container {
+            position: relative;
+            cursor: pointer;
+            width: 200px;
+            height: 280px;
+            border: 1px solid black;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: rgb(150, 255, 13);
+            margin: 100px auto;
+            display: flex;
+        }
+
+        .photo1, .photo2{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: all 0.7s ease-in-out; 
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .photo1 {
+            transform: translateY(0px);
+            background-color: black;
+        }
+
+        .photo2 {
+            transform: translateY(280px);
+        }
+        
+        .container:hover .photo1 {
+            transform: translateY(-180px) scale(0.6);
+            
+        }
+        
+        .container:hover .photo2 {
+            transform: translateY(0px) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="photo1">
+            <img src="https://css-task-15.netlify.app/img/naruto-uzumaki-1-285x399.webp" alt="Naruto 1">
+        </div>
+
+        <div class="photo2">
+            <img src="https://css-task-15.netlify.app/img/naruto-uzumaki-1-285x399.webp" alt="Naruto 2">
+        </div>
+    </div>
+
+</body>
+</html>

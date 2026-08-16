@@ -1,0 +1,23 @@
+section{
+    width: 70%;
+    max-width: 1175px;
+    box-sizing: border-box;
+    display: flex;
+    margin-inline: auto;
+    padding-top: 100px;
+}
+
+article{
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+}
+
+article p{
+    color: #777777;
+    font-size: 14px;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}

@@ -1,0 +1,96 @@
+/* Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol {
+    width: 400px;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+li{
+    padding: 15px;
+    color: white;
+    list-style-position: inside;
+    font-family: "Open Sans", sans-serif;
+}
+
+li:first-child{
+    background-color: black;
+}
+
+li:nth-child(2){
+    background-color: #C0C0C0;
+}
+
+li:nth-child(3){
+    background-color: #808080;
+
+}
+
+li:nth-child(4){
+    background-color: #3498db;
+}
+
+li:nth-child(5){
+    background-color: #800000;
+}
+
+li:nth-child(6){
+    background-color: #FF0000;
+}
+
+li:nth-child(7){
+    background-color: #800080;
+}
+
+li:nth-child(8){
+    background-color: #FF00FF;
+    color: black;
+}
+
+li:nth-child(9){
+    background-color: #008000;
+}
+
+li:nth-child(10){
+    background-color: #00FF00;
+    color: black;
+}
+
+li:nth-child(11){
+    background-color: #808000;
+}
+
+li:nth-child(12){
+    background-color: #FFFF00;
+    color: black;
+}
+
+li:nth-child(13){
+    background-color: #000080;
+}
+
+li:nth-child(14){
+    background-color: #0000FF;
+}
+
+li:nth-child(15){
+    background-color: #008080;
+}
+
+li:last-child{
+    background-color: #00FFFF;
+    color: black;
+}
+
+li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+}

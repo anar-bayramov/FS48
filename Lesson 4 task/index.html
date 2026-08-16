@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+  </head>
+  <body style="display: flex; justify-self: center;  margin: 35px;">
+    <form>
+      <table border="1">
+        <tr>
+          <th>First Name</th>
+          <td><input type="text" style="width: 98%" /></td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td><input type="text" style="width: 98%" /></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td><input type="email" style="width: 98%" /></td>
+        </tr>
+        <tr>
+          <th>Password</th>
+          <td><input type="password" style="width: 98%" /></td>
+        </tr>
+        <tr>
+          <th>Re-Enter Password</th>
+          <td><input type="password" style="width: 98%" /></td>
+        </tr>
+        <tr>
+          <th rowspan="2">Gender</th>
+          <td>
+            <input type="radio" name="gender" id="gender1" />
+            <label for="gender1">Male</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="radio" name="gender" id="gender2" />
+            <label for="gender2">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td><input type="number" style="width: 98%" /></td>
+        </tr>
+        <tr>
+          <th>Phone Number</th>
+          <td><input type="number" style="width: 98%" /></td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td>
+            <textarea
+              style="width: 98%; 
+              resize: none"
+              cols="20"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>State</th>
+          <td><input type="text" style="width: 98%" /></td>
+        </tr>
+        <tr>
+          <th>Country</th>
+          <td>
+            <select style="width: 99%">
+              <option>Choose your country</option>
+              <option>United States of America</option>
+              <option>United Kingdom</option>
+              <option>India</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Language Known</th>
+          <td>
+            <input type="checkbox" id="english"/><label for="english">English</label>
+            <input type="checkbox" id="kanada"/><label for="kanada">Kanada</label>
+            <input type="checkbox" id="hindi"/><label for="hindi">Hindi</label>
+            <input type="checkbox" id="telugu"/><label for="telugu">Telugu</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" id="onay"/>
+            <label for="onay">Hereby I declare all the given details are true</label>
+          </td>
+        </tr>
+        <tr style="text-align: end">
+          <td colspan="2">
+            Log in to <a href="https://www.google.com">Google</a> web site
+          </td>
+        </tr>
+        
+      </table>
+      <div style="text-align: center; margin: 15px;">
+      <button>Register</button>
+      </div>
+    </form>
+  </body>
+</html>

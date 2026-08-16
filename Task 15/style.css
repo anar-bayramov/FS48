@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gainsboro;
+    font-family: Arial, sans-serif;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    color: #0077cc;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+    
+}
+
+.grid-card{
+    width: 313px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.grid-card img{
+    width: 313px;
+    height: 180px;
+    object-fit: cover;
+}
+p{
+    margin-block: 12px;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+.container:hover .grid-card{
+    filter: blur(3px);
+    transform: scale(0.95);
+}
+
+.container .grid-card:hover{
+    filter: none;
+    transform: scale(1.1);
+    z-index: 1;
+}

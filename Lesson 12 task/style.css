@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Mulish", sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: #343a40;
+    opacity: .9;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 24px;
+    gap: 30px;
+
+    .logo{
+        font-size: 21px;
+        font-weight: 900;
+        line-height: 35px;
+    }
+
+    .nav-links{
+        display: flex;
+        gap: 35px; 
+        list-style: none; 
+    }
+
+    li>a{
+        color: white;
+        padding: 5px 10px;
+        font-size: 17.6px;
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 2px solid transparent;
+        transition: .4s ease;
+        
+    }
+
+    li .active:hover{
+        border-bottom-color: #fff;
+        }
+    
+    .contact{
+        border-radius: 30px;
+        background-color: #7971ea;
+        padding: 11px 20px;
+        border-color: #7971ea;
+
+    }
+
+    .contact a{
+        text-decoration: none;
+        color: white;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 19px;
+    }
+
+    .contact:hover{
+        background-color: #5a50e5;
+        cursor: pointer;
+    }
+}
+
+.container{
+    position: relative;
+    width: 70%;
+    max-width: 1320px;
+    margin-inline: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    /* width: 70%;
+    height: 600px;
+    margin-inline: auto; */
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    margin-right: 50px;
+}
+
+
+button, .sign{
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 16px 48px;
+    border-radius: 25px;
+    background-color: #7971ea;
+    border-color: #7971ea;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Mulish", sans-serif;;
+}
+
+button{
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #5a50e5;
+}
+
+.sign{
+    padding: 16px 28px;
+    margin-bottom: 18px;
+}
+
+h1,h3,p{
+    margin-bottom: 24px;
+    
+}
+h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+p{
+    color: #ffffff80;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.rg-container{
+    padding: 40px;
+    background-color: white;
+    width: 750px;
+    border-radius: 7px;
+}
+
+.register{ 
+    input{
+        border: none;
+        border-radius: 3px;
+        border: 1px solid #d8d6d7;
+        padding: 6px 12px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 45px;
+    }
+
+}

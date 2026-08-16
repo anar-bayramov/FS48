@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Muli;
+    src: url(./Fonts/Muli-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F9FA;
+    font-family: Muli, sans-serif;
+    font-weight: 300;
+    line-height: 34px;
+    
+}
+
+main {
+    width: 70%;
+    max-width: 1320px;
+    min-width: 315px;
+    margin-inline: auto;
+    padding-block: 60px;
+}
+
+header{
+    h2,h3{
+        font-family: Oswald, sans-serif;
+        font-weight: 300;
+    }
+    h2{
+        margin-bottom: 60px;
+        font-size: 32px;
+    }
+
+    h3{
+        color: #ff5e15;
+        font-size: 20.8px;
+        margin-bottom: 8px;
+    }
+    
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.card-container p{
+    color: #b0b0b0;
+}
+
+.card h3{
+        font-family: Oswald, sans-serif;
+        font-weight: 400;
+}
+.card-container p a{
+    text-decoration: none;
+    color: #ff5e15;
+    cursor: pointer;
+
+}
+
+.card {
+    width: 320px; 
+    height: auto;
+}
+
+.card-img {
+    height: 240px; 
+    overflow: hidden; 
+    margin-bottom: 20px; 
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease; 
+    cursor: pointer;
+}
+
+.card:hover .card-img img {
+    transform: scale(1.08); 
+}
+
+.card-name{
+    font-size: 24px;
+}
