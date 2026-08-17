@@ -11,7 +11,6 @@ main{
     background-color: #f9fafb;
 }
 
-
 header{
     position: sticky;
     top: 0;
@@ -159,7 +158,6 @@ svg{
 .cloud{
     color: #759AF8;
 }
-
 .content-text{
     color: #9ca3af;
     font-size: 20px;
@@ -200,6 +198,11 @@ svg{
         justify-content: center;
     }
 
+    
+}
+.btn-two:hover{
+    background-color: #6366f1;
+    box-shadow: 0 1px 12px 0px #6366f1;
 }
 
 .btn1{
@@ -216,6 +219,10 @@ svg{
     height: 60px;
     background-color: #ffffff00;
     border: 2px solid  #4b5563;
+}
+.view:hover{
+    background-color: #ffffff0d;
+    box-shadow: none;
 }
 
 .number-card{
@@ -590,6 +597,9 @@ svg{
     transform: translate(-50px);
     z-index: 5;
     cursor: pointer;
+    svg{
+        color: #000;
+    }
 
 
     border-radius: 50%;
@@ -771,7 +781,7 @@ footer {
     gap: 100px;
     align-items: start;
     width: 100%;
-    padding-bottom: 64px;
+    padding-block: 64px;
 }
 
 /* Sol tərəf */
@@ -894,22 +904,18 @@ footer {
 }
 
 /* Alt hissə */
-.ff {
+.b-footer {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
     margin-inline: auto;
-    padding-inline: 32px;
-    padding-bottom: 32px;
+    padding: 32px;
     border-top: 1px solid #1f2937;
-    padding-top: 32px;
 }
 
-.securty-footer {
+/* .securty-footer {
     width: 100%;
-    
-    
-}
+} */
 
 .securty-footer p {
     color: #6b7280;
@@ -921,11 +927,18 @@ footer {
 
 .securty-link{
     display: flex;
-    width: 450px;
+    width: 350px;
     gap: 20px;
     font-size: 14px;
 }
 .securty-link a{
     text-decoration: none;
     color: #374151;
+}
+
+.b-center{
+    display: flex;
+    flex-direction: row;
+    max-width: 1500px;
+    justify-content: space-between;
 }
