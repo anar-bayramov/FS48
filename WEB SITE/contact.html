@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US | CloudNest</title>
+    <!-- DM SANS Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Title Icon Web Site -->
+    <link rel="icon" type="image/svg+xml" href="https://cloudnest-colorlib.pages.dev/favicon.svg">
+
+    <!-- Css -->
+    <style>
+        .container{
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-['DM_Sans',sans-serif]">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-1000 bg-white shadow-[0_8px_10px_0_rgba(59,59,60,0.1)]">
+        <nav class="h-20 flex justify-between items-center max-w-400 mx-auto px-8">
+            <div>
+                <a href="#" >
+                <img src="https://cloudnest-colorlib.pages.dev/assets/img/logo.svg" alt="Logo" class="h-20 w-50">
+            </a>
+            </div>
+
+            <div>
+                <ul class="flex gap-8 text-sm text-[#4b5563]">
+                    <li><a href="./index.html">Products</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                
+            </div>
+
+            
+            <div class="flex items-center gap-5">
+                <!-- <button class="icon-btn sun" aria-label="Light mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+
+                </button> -->
+                <button aria-label="Dark mode" class="p-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+
+                </button>
+
+                <button class="bg-[#4F46E5] h-10 w-37 rounded-[7px] py-2.5 px-5 text-center text-sm text-white">
+                    <a href="#">Get Started Free</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="w-full h-82 bg-[#4f46e5] text-white">
+            <div class="max-w-[1920px] h-full mx-auto text-center text-center py-24">
+                <h3 class="font-bold text-[48px] leading-[48px]">Contact Us</h3>
+                <p class="mt-4 mx-100 text-lg text-[#e0e7ff] ">Have questions about CloudNest? Our developer support team is ready to help.</p>
+                <div class="flex justify-center mt-6 gap-2 text-sm">
+                    <a href="./index.html" class="text-[#C7D2FE] hover:color-#fff">Home </a>
+                    <span class="text-[#C7D2FE]">/</span>
+                    <a href="./pricing.html">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-28">
+            <div class="grid gap-12 grid-cols-5 px-8">
+                <div class="col-span-3">
+                    <h3 class="font-bold leading-8 text-2xl">Get in Touch</h2>
+                    <p class="text-[#4b5563] mt-2">Tell us about your project and our team will get back to you within 24 hours.</p>
+                    <form class="mt-6">
+                        <div class="flex gap-3 mb-6">
+                            <div class="w-full mt-1">
+                                <label class="block text-sm">Full Name</label>
+                                <input type="text" placeholder="Jane Doe" class="block w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:border outline-none focus:border-[#4f46e5]">
+                            </div>
+    
+                            <div class="w-full mt-1">
+                                <label class="block">Email</label>
+                                <input type="email" placeholder="jane@example.com" class="block w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:border outline-none focus:border-[#4f46e5]">
+                            </div>
+                        </div>
+                        <div class="mt-1 mb-6">
+                            <label class="block">Subject</label>
+                            <input type="text" placeholder="Technical support, billing inquiry, partnership..." class="block w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:border outline-none focus:border-[#4f46e5]">
+                        </div>
+                        <div class="mt-1 mb-6">
+                            <label  id="message" class="block">Message</label>
+                            <textarea name="message" id="message" placeholder="Tell us about your infrastructure needs..." class="block w-full h-40 px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:border outline-none focus:border-[#4f46e5]"></textarea>
+                        </div>
+    
+                        <button class="flex items-center justify-center px-6 py-3 bg-[#4F46E5] text-white gap-2 rounded-lg text-sm hover:bg-[#4338ca] hover:shadow-lg hover:shadow-blue-500/30">Send Message 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-span-2">
+                    <h2 class="font-bold text-2xl leading-8">Developer Support</h2>
+                    <p class="text-[#4b5563]">Reach out through any of these channels.</p>
+
+                    <div>
+                        <div class="flex flex-col jsutify-center mt-8"> <!--SVG-->
+                            <div class="flex gap-4 mb-6">
+                                <div class="flex items-center justify-center h-10 w-10 bg-[#E0E7FF] rounded-lg">
+                                    <svg class="text-[#4f46e5] stroke-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Email</h3>
+                                    <a href="mailto" class="text-[#4b5563] hover:text-[#4f46e5]">hello@cloudnest.dev</a>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 mb-6">
+                                <div class="flex items-center justify-center h-10 w-10 bg-[#E0E7FF] rounded-lg">
+                                    <svg class="text-[#4f46e5] stroke-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Phone</h3>
+                                    <a href="tel" class="text-[#4b5563] hover:text-[#4f46e5]"">(555) 456-7890</a>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 mb-6">
+                                <div class="flex items-center justify-center h-10 w-10 bg-[#E0E7FF] rounded-lg">
+                                    <svg class="text-[#4f46e5] stroke-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Address</h3>
+                                    <address class="text-[#4b5563]">800 NW 6th Ave, Portland, OR 97209</address>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 mb-6">
+                                <div class="flex items-center justify-center h-10 w-10 bg-[#E0E7FF] rounded-lg ">
+                                    <svg class="text-[#4f46e5] stroke-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Support Hours</h3>
+                                    <p class="text-[#4b5563]">Mon - Fri: 6:00 AM - 10:00 PM PST</p>
+                                    <p class="text-[#4b5563]">Sat - Sun: 9:00 AM - 5:00 PM PST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184851.1358742895!2d49.69015031780891!3d40.394475511010704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2zQmFrxLE!5e1!3m2!1saz!2saz!4v1787503008022!5m2!1saz!2saz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" 
+        class="w-full"></iframe>    
+    </main>
+
+    <footer class="bg-[#111827] pt-24 mx-auto">
+        <div class="mx-auto px-3 px-8 max-w-[1520px]">
+            <div class="grid grid-cols-12 ">
+                <div class="col-span-4">
+                    <a href="#" class="inline-block"> 
+                        <img src="https://cloudnest-colorlib.pages.dev/assets/img/logo-light.svg" alt="CloudNest" class="h-10 w-auto"> 
+                    </a>
+                    <p class="mt-4 max-w-xs text-gray-400"> Deploy anything, scale everything. CloudNest is the developer-first cloud platform for modern applications. </p>
+                    <!-- Contact -->
+                    <div class="flex flex-col text-gray-400 mt-6 gap-3">
+                        <div>
+                            <a href="tel:(555) 456-7890" class="flex items-center gap-3 hover:text-white">
+                                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                </svg>
+                                (555) 456-7890
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:hello@cloudnest.dev" class="flex items-center gap-3 hover:text-white">
+                                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                </svg>
+                                hello@cloudnest.dev
+                            </a>
+                        </div>
+                        <div>
+                            <address class="flex items-center gap-3">
+                                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                </svg>
+                                800 NW 6th Ave, Portland, OR 97209
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 mt-6">
+                        <div class="bg-[#1f2937] w-10 h-10  rounded-[8px] flex justify-center items-center cursor">
+                            <svg class="text-[#9ca3af]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </div>
+                        <div class="bg-[#1f2937] w-10 h-10  rounded-[8px] flex justify-center items-center cursor">
+                            <svg class="text-[#9ca3af]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                            </svg>
+                        </div>
+                        <div class="bg-[#1f2937] w-10 h-10 rounded-[8px] flex justify-center items-center cursor">
+                            <svg class="text-[#9ca3af]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-span-8 grid grid-cols-3 gap-8">
+                    <div> 
+                        <h3 class="text-sm font-semibold uppercase  text-white">Products</h3>
+                        <ul class="mt-4 space-y-3"> 
+                            <li> 
+                                <a href="#" class="text-gray-400  hover:text-white"> Hosting</a> 
+                            </li>
+                            <li> 
+                                <a href="#" class="text-gray-400 hover:text-white"> Databases</a> 
+                            </li>
+                            <li> 
+                                <a href="#" class="text-gray-400 hover:text-white"> Edge Functions</a> 
+                            </li>
+                            <li> 
+                                <a href="#" class="text-gray-400 hover:text-white"> Object Storage</a> 
+                            </li> 
+                        </ul> 
+                    </div> 
+                    <div> 
+                        <h3 class="text-sm font-semibold uppercase text-white">Developers</h3> 
+                        <ul class="mt-4 space-y-3"> 
+                            <li> 
+                                <a href="#" class="text-gray-400 hover:text-white"> Documentation</a> 
+                            </li>
+                            <li> 
+                                <a href="#" class="text-gray-400 hover:text-white"> API Reference</a> 
+                            </li>
+                                <li> 
+                                    <a href="#" class="text-gray-400 hover:text-white"> CLI</a> 
+                                </li>
+                                <li> 
+                                    <a href="#" class="text-gray-400 hover:text-white"> Status</a>
+                        </li> 
+                    </ul> 
+                </div> 
+                <div> 
+                    <h3 class="text-sm font-semibold uppercase text-white">Company</h3> 
+                    <ul class="mt-4 space-y-3"> 
+                        <li> 
+                            <a href="#" class="text-gray-400 hover:text-white"> About</a> 
+                        </li>
+                        <li> 
+                            <a href="#" class="text-gray-400  hover:text-white"> Blog</a> 
+                        </li>
+                        <li> 
+                            <a href="#" class="text-gray-400  hover:text-white"> Careers</a> 
+                        </li>
+                        <li> 
+                            <a href="#" class="text-gray-400 hover:text-white"> Contact</a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div>
+        </div>
+        <div class="w-full mt-16 flex items-center justify-between gap-4 border-t border-gray-800 py-8"> 
+                <p class="text-sm text-gray-500">© 2026 CloudNest. All rights reserved</p> 
+                <div class="flex gap-6 justify-end"> 
+                    <a href="#" class="text-sm text-gray-500 hover:text-gray-300">Privacy Policy</a> 
+                    <a href="#" class="text-sm text-gray-500 hover:text-gray-300">Terms of Service</a> 
+                    <a href="#" class="text-sm text-gray-500 hover:text-gray-300">Style Guide</a> 
+                </div> 
+            </div>
+    </footer>
+</body>
+</html>
