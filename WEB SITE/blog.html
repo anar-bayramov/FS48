@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | CloudNest</title>
+    <!-- DM SANS Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Title Icon Web Site -->
+    <link rel="icon" type="image/svg+xml" href="https://cloudnest-colorlib.pages.dev/favicon.svg">
+
+    <!-- Css -->
+    <style>
+        .container{
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-['DM_Sans',sans-serif]">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-1000 bg-white shadow-[0_8px_10px_0_rgba(59,59,60,0.1)]">
+        <nav class="h-20 flex justify-between items-center max-w-400 mx-auto px-8">
+            <div>
+                <a href="#" >
+                <img src="https://cloudnest-colorlib.pages.dev/assets/img/logo.svg" alt="Logo" class="h-20 w-50">
+            </a>
+            </div>
+
+            <div>
+                <ul class="flex gap-8 text-sm text-[#4b5563]">
+                    <li><a href="./index.html">Products</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </div>
+
+            
+            <div class="flex items-center gap-5">
+                <!-- <button class="icon-btn sun" aria-label="Light mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+
+                </button> -->
+                <button aria-label="Dark mode" class="p-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+
+                </button>
+
+                <button class="bg-[#4F46E5] h-10 w-37 rounded-[7px] py-2.5 px-5 text-center text-sm text-white">
+                    <a href="#">Get Started Free</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="w-full h-[356px] bg-[#4f46e5] text-white">
+            <div class="max-w-[1920px] h-full mx-auto text-center text-center py-20">
+                <div class="inline-flex items-center bg-white/20 text-white rounded-[20px] px-3 py-1 mb-4 font-medium leading-5 text-sm">Our Blog</div>
+                <h3 class="font-bold text-[48px] leading-[48px]">Engineering Blog</h3>
+                <p class="mt-4 mx-100 text-lg text-[#e0e7ff] ">Stay up to date with the latest infrastructure insights, deployment tutorials, and platform updates.</p>
+                <div class="flex justify-center mt-6 gap-2 text-sm">
+                    <a href="./index.html" class="text-[#C7D2FE] hover:color-#fff">Home </a>
+                    <span class="text-[#C7D2FE]">/</span>
+                    <a href="./blog.html">Blog</a>   
+                </div>
+            </div>
+        </section>
+
+        <section class="py-28 bg-gray-50">
+            <div class="container px-4 mx-auto">
+                <div class="w-full h-13 mx-auto max-w-xl mb-10 bg-gray-50 rounded-3xl border-1 border-gray-200 shadow-lg flex items-center gap-2 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+
+                    <input type="search" placeholder="Search articles...">
+                </div>
+
+                <div class="flex justify-center items-center gap-2">
+                    <button class="bg-[#4f46e5] text-white py-1 px-4 rounded-3xl">All</button>
+                    <button class="bg-[#E5E7EB] text-black py-1 px-4 rounded-3xl">Tutorial</button>
+                    <button class="bg-[#E5E7EB] text-black py-1 px-4 rounded-3xl">Engineering</button>
+                    <button class="bg-[#E5E7EB] text-black py-1 px-4 rounded-3xl">Architecture</button>
+                    <button class="bg-[#E5E7EB] text-black py-1 px-4 rounded-3xl">DevOps</button>
+                </div>
+            </div>
+
+            <!-- Card gruop -->
+            <section class="mx-auto max-w-7xl grid grid-cols-3 gap-6 mt-10">
+                <article class="rounded-2xl shadow-lg border border-gray-50 overflow-hidden group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="" class="h-full w-full object-cover transition-transform group-hover:scale-110 duration-300">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2">
+                            <p class="inline-flex items-center bg-blue-200 rounded-full text-[#4338CA] text-xs px-2 ">Tutorial</p>
+                            <p class="text-[#6B7280]">Feb 20, 2026</p>
+                        </div>
+                        
+                        <h3 class="mt-3 text-lg font-bold leading-7 group-hover:text-[#4f46e5]">Deploying Next.js to the Edge: A Complete Guide</h3>
+                        <p class="mt-2 text-sm text-gray-600">Learn how to deploy your Next.js application to edge runtimes for lightning-fast performance across the...</p>
+                        <div class="flex items-center gap-3 mt-4">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="" class="rounded-full h-8 w-8">
+                            <div>
+                                <p class="text-sm font-medium">Maya Johnson</p>
+                                <p class="text-xs">8 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="rounded-2xl shadow-lg border border-gray-50 overflow-hidden group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&h=400&fit=crop" alt="" class="h-full w-full object-cover transition-transform group-hover:scale-110 duration-300">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2">
+                            <p class="inline-flex items-center bg-blue-200 rounded-full text-[#4338CA] text-xs px-2 ">Engineering</p>
+                            <p class="text-[#6B7280]">Feb 12, 2026</p>
+                        </div>
+                        
+                        <h3 class="mt-3 text-lg font-bold leading-7 group-hover:text-[#4f46e5]">Database Scaling Strategies for Growing Applications</h3>
+                        <p class="mt-2 text-sm text-gray-600">Explore proven strategies for scaling your database layer as your application grows from hundreds to...</p>
+                        <div class="flex items-center gap-3 mt-4">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="" class="rounded-full h-8 w-8">
+                            <div>
+                                <p class="text-sm font-medium">Kenji Tanaka</p>
+                                <p class="text-xs">10 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="rounded-2xl shadow-lg border border-gray-50 overflow-hidden group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop" alt="" class="h-full w-full object-cover transition-transform group-hover:scale-110 duration-300">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2">
+                            <p class="inline-flex items-center bg-blue-200 rounded-full text-[#4338CA] text-xs px-2 ">Architecture</p>
+                            <p class="text-[#6B7280]">Feb 5, 2026</p>
+                        </div>
+                        
+                        <h3 class="mt-3 text-lg font-bold leading-7 group-hover:text-[#4f46e5]">Serverless vs. Containers: Choosing the Right Architecture</h3>
+                        <p class="mt-2 text-sm text-gray-600">A practical comparison of serverless functions and container-based deployments to help you choose the...</p>
+                        <div class="flex items-center gap-3 mt-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="" class="rounded-full h-8 w-8">
+                            <div>
+                                <p class="text-sm font-medium">Alex Rivera</p>
+                                <p class="text-xs">7 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="rounded-2xl shadow-lg border border-gray-50 overflow-hidden group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="" class="h-full w-full object-cover transition-transform group-hover:scale-110 duration-300">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2">
+                            <p class="inline-flex items-center bg-blue-200 rounded-full text-[#4338CA] text-xs px-2 ">DevOps</p>
+                            <p class="text-[#6B7280]">Jan 28, 2026</p>
+                        </div>
+                        
+                        <h3 class="mt-3 text-lg font-bold leading-7 group-hover:text-[#4f46e5]">Cloud Cost Optimization: Stop Overpaying for Infrastructure</h3>
+                        <p class="mt-2 text-sm text-gray-600">Practical strategies to reduce your cloud spending by 30-50% without sacrificing performance or reliability....</p>
+                        <div class="flex items-center gap-3 mt-4">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="" class="rounded-full h-8 w-8">
+                            <div>
+                                <p class="text-sm font-medium">Priya Sharma</p>
+                                <p class="text-xs">6 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="rounded-2xl shadow-lg border border-gray-50 overflow-hidden group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=600&h=400&fit=crop" alt="" class="h-full w-full object-cover transition-transform group-hover:scale-110 duration-300">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2">
+                            <p class="inline-flex items-center bg-blue-200 rounded-full text-[#4338CA] text-xs px-2 ">DevOps</p>
+                            <p class="text-[#6B7280]">Jan 20, 2026</p>
+                        </div>
+                        
+                        <h3 class="mt-3 text-lg font-bold leading-7 group-hover:text-[#4f46e5]">Zero-Downtime Deployments: A Practical Guide</h3>
+                        <p class="mt-2 text-sm text-gray-600">Learn how to deploy updates to production without any downtime using rolling deployments, blue-green..</p>
+                        <div class="flex items-center gap-3 mt-4">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="" class="rounded-full h-8 w-8">
+                            <div>
+                                <p class="text-sm font-medium">Maya Johnson</p>
+                                <p class="text-xs">9 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+    
+            </section>
+        </section>
+        
+    </main>
+</body>
+</html>
