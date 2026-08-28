@@ -27,3 +27,4 @@ console.log(`Bölgüdən qalan qalıq : ${qaliq}`);
 let firstName = "Anar";
 let lastName = "Bayramov";
 console.log(`Sizin adınız ${firstName} ${lastName}. Tanışlığımıza çox şadam!`);
+console.log(`Sizi bir daha görməyimizə şadıq, ${[firstName]} ${lastName}`);
