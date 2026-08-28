@@ -24,4 +24,6 @@ let arti = num * 5;
 let qaliq = num % 3
 console.log(`Dərəcə qüvvəti : ${ arti }`);
 console.log(`Bölgüdən qalan qalıq : ${qaliq}`);
-
+let firstName = "Anar";
+let lastName = "Bayramov";
+console.log(`Sizin adınız ${firstName} ${lastName}. Tanışlığımıza çox şadam!`);
