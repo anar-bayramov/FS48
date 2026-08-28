@@ -19,3 +19,9 @@ let age = now.getFullYear() - hbd.getFullYear();
 console.log(`Sizin ${age} yaşınız var`);
 let only = age * 365;
 console.log(`Siz ${only} gündür yaşayırsınız`);
+let num = 17
+let arti = num * 5;
+let qaliq = num % 3
+console.log(`Dərəcə qüvvəti : ${ arti }`);
+console.log(`Bölgüdən qalan qalıq : ${qaliq}`);
+
