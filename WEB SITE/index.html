@@ -11,8 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./reponsive.css">
+    
     <!-- Font  Consolas -->
     <link href="https://fonts.cdnfonts.com/css/consolas-original" rel="stylesheet">
 
@@ -57,6 +60,12 @@
                 <button class="btn">
                     <a href="#">Get Started Free</a>
                 </button>
+
+                <div class="menu"> <!--Menu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
             </div>
         </nav>
     </header>
@@ -303,15 +312,15 @@
                     <div>
 
                         <div class="user-container container">
+                            <div class="left-check">
+                                <!-- Left Check -->
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
                             <div class="card-scroll">    
                                 <div class="point">
 
-                                    <div class="left-check">
-                                        <!-- Left Check -->
-                                        <svg class="checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
 
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">                 
                                         <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
@@ -342,7 +351,7 @@
                                 </div>
                             </div>
 
-                            <div class="card-scroll">    
+                            <div class="card-scroll h ">    
                                 <div class="point">
 
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">                 
@@ -374,7 +383,7 @@
                                 </div>
                             </div>
 
-                            <div class="card-scroll">    
+                            <div class="card-scroll h">    
                                 <div class="point">
 
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">                 
@@ -396,13 +405,7 @@
                         
                                 <p class="point-text">“We serve 10M+ requests daily on CloudNest. Auto-scaling handles our traffic spikes without any intervention from our team.”</p>
 
-                                <div class="right-check">
-
-                                    <!-- Right Check -->
-                                    <svg class="checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                    </svg>
-                                </div>
+                                
 
                                 <div class="user-info">
                                     <div class="photo">E</div>
@@ -412,6 +415,13 @@
                                     </div>
                                     
                                 </div>
+                            </div>
+                            <div class="right-check">
+
+                                <!-- Right Check -->
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                </svg>
                             </div>
                         </div>
                         <div class="scroll">
@@ -524,7 +534,7 @@
                     <h2>Ready to Ship Faster?</h2>
                     <p>Join 10,000+ developers who deploy with confidence on CloudNest. Start free, scale without limits.</p>
                     <div class="faster-btn">
-                        <button class="faster-a">
+                        <button class="faster-a btn1">
                             <a href="#">Get Started Free 
                                 <svg class="btn-svg btn1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />

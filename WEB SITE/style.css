@@ -28,8 +28,14 @@ header{
     gap: 40px;
 }
 
+
+
 .logo-link{
     width: 200px;
+}
+
+.menu{
+    display: none;
 }
 
 .nav-container{
@@ -105,6 +111,31 @@ svg{
         font-weight: 500;
         line-height: 20px;
         font-size: 14px;
+}
+
+.top-title::before {
+    content: "";
+    display: inline-block;
+    background-color: #6366f1;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: top-title-live 1.2s ease-in-out infinite;
+}
+
+@keyframes top-title-live {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.65);
+    }
+
+    50% {
+        opacity: 0.35;
+        transform: scale(0.7);
+        box-shadow: 0 0 0 6px rgba(99, 102, 241, 0);
+    }
 }
 
 .hero {
@@ -356,7 +387,6 @@ svg{
 }
 .actived-card{
     width: 100%;
-    
 }
 
 .actived-list {
@@ -594,7 +624,7 @@ svg{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    transform: translate(-50px);
+    transform: translateX(-720px);
     z-index: 5;
     cursor: pointer;
     svg{
@@ -615,7 +645,7 @@ svg{
 }
 
 .right-check{
-    transform: translate(400px);
+    transform: translate(720px);
 }
 
 .faq{
@@ -685,8 +715,10 @@ svg{
 }
 
 .faster{
-    height: 450px;
+    height: 400px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .grid-bg {
     background-color: #4b28c8;
@@ -697,7 +729,6 @@ svg{
 }
 .faster-card{
     max-width: 768px;
-    margin-top: 64px;
     margin-inline: auto;
     text-align: center;
     display: flex;
