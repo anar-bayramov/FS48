@@ -99,6 +99,7 @@ console.log(`Mehsul qiymeti : ${price[0]}manat ${price[1]}qepik`);
 // let pul = prompt("Zehmet olmasa emek haqqinizi daxil edin :");
 // let pul1 = Number(pul);
 // let xalisMaas = pul * 0.87;
+
 // console.log(xalisMaas);
 
 //Task 21
@@ -130,16 +131,18 @@ console.log(value <= 10);   // false
 console.log(value != 20);   // false
 
 //Task 24
-let hbd = "18" //prompt("Yaşını qeyd edin :")
+let hbd = +"18" //prompt("Yaşını qeyd edin :")
 if (hbd >= 18) {
-    alert("Access granted");    
+    console.log("Access granted");
+    //alert("Access granted");    
 }
 else {
-    alert("Access denied");
+    console.log("Access denied");
+    //alert("Access denied");
 }
 
 //Task 25
-let input = prompt("Ardıcıl 3 ədədi boşluqlarla daxil edin :");
+let input = "25 64 34" //prompt("Ardıcıl 3 ədədi boşluqlarla daxil edin :");
 let ededler = input.split(" ");
 let a = Number(ededler[0]);
 let b = Number(ededler[1]);
@@ -156,10 +159,154 @@ else {
 }
 
 //Task 26 
-let il = Number(prompt("Bir il daxil edin:"));
+let il ="25" //Number(prompt("Bir il daxil edin:"));
 
 if (il % 4 === 0) {
     console.log("İl uzun ildir");
 } else {
     console.log("İl uzun il deyil");
 }
+
+//Task 27
+let id = +"2" //prompt("Reqem olaraq deyer girin : ");
+switch (id) {
+    case 1:
+        console.log("Available 10 pcs.");
+        break;
+    case 2:
+        console.log("Available 256 pcs.");
+        break;
+    case 3:
+        console.log("Available 53 pcs.");
+        break;
+    case 4:
+        console.log("There are 3 available.");
+        break;
+        
+    default:
+        console.log("Out of stock");
+}
+
+//Task 28
+let gender = "male"; //prompt("Zehmet olmasa cinsinizi M ve ya F ile belli edin :");
+if (gender === "M" || gender === "Male" || gender === "male") {
+    console.log("Male");
+}else if (gender === "F" || gender === "FeMale" || gender === "female" || gender === "Female") {
+    console.log("FeMale");
+}
+else {
+    console.log("Order");
+}
+
+//Task 29
+let months = +"10"; //prompt("Zhmet olmasa ayin nomresini daxil edin :");
+let list = 
+    ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"]
+if ((months >= 1) & (months <= 12)) {
+  console.log(list[months - 1]);
+} else {
+  console.log("Zehmet olmasa duzgun qeyd edin");
+}
+
+// Task 30
+let date ="2009.12.19" //prompt("Zehmet olmasa dogum tarixinizi qeyd edin. Meselen : «2009.12.19»");
+let date1 = date.split(".")
+let list_date = 
+    ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"]
+if ((date1[1] >= 1) & (date1[1] <= 12)) {
+    console.log(`${date1[2]} ${list[date1[1] - 1]} ${date1[0]}-cu il`);
+}
+else {
+    console.log("Yanlış dəyər daxil edilib");
+}
+
+//Task 34
+let number = +"" //prompt("Dəyər daxil edin :")
+
+    if (number > 0) {
+        console.log("Müsbət ədəddir");
+    } else if (number < 0) {
+        console.log("Mənfi ədəddir");
+    } else {
+        console.log("Ədəd sıfırdır");
+}
+    
+//Task 35
+let numb = "2 10 6" //prompt("3 ferqli deyer daxil edin");
+let numb_list = numb.split(" ")
+let a1 = +numb_list[0];
+let b1 = +numb_list[1];
+let c1 = +numb_list[2];
+
+if (a1 === b1 || b1 === c1 || a1 === c1) {
+    console.log("Eyni ədəd təkrarlana bilməz");
+}
+else {
+    let enBoyuk1 = Math.max(a1, b1, c1);
+    console.log(enBoyuk1);
+}
+ 
+//Task 36
+let nmb = "45" //prompt("Deyer daxil edin");
+let nmb1 = (nmb % 2 === 0) ? "Cut ededdir" : "Tek ededdir";
+console.log(nmb1);
+
+//Task 37
+let a3 = 8;
+let perimert = 4 * a3;
+let sahe = a3 ** 2;
+console.log(perimert);
+console.log(sahe);
+
+//TAsk 38
+let score ="45" //+prompt("Xalinizi daxil edin :");
+switch (true) {
+    case (score >= 90 && score <= 100):
+        console.log("Əla");
+        break;
+    case (score >= 75 && score <= 89):
+        console.log("Yaxşı");
+        break;
+    case (score >= 60 && score <= 74):
+        console.log("Orta");
+        break;
+    case (score >= 0 && score <= 59):
+        console.log("Zəif");
+        break;
+
+    default:
+        console.log("Duzgun deyer girin");
+}
+
+//Task 39
+let random_numb = Math.floor(Math.random()*51);
+let numb3 = random_numb;
+if (random_numb >=0 & random_numb <= 50) {
+    console.log("secilen eded dogrudur !");
+    console.log(numb3);
+}
+else {
+    console.log("Duzgun deyer yaradin");
+}
+
+let a4 = 5, b4 = 3, op = "*";
+let numb_total;
+
+switch (op) {
+    case "+":
+        numb_total = a4 + b4;
+        break;
+    case "-":
+        numb_total = a4 - b4;
+        break;
+    case "*":
+        numb_total = a4 * b4;
+        break;
+    case "/":
+        numb_total = (b4 !== 0) ? a4 / b4 : "Sifira bolmek olmaz";
+        break;
+    default:
+        numb_total = "Duzgun operator daxil edilmeyib";
+}
+
+console.log(`Nəticə: ${numb_total}`); 
