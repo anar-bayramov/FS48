@@ -279,7 +279,7 @@ switch (true) {
 }
 
 //Task 39
-let random_numb = Math.floor(Math.random()*51);
+let random_numb = Math.round(Math.random()*51);
 let numb3 = random_numb;
 if (random_numb >=0 & random_numb <= 50) {
     console.log("secilen eded dogrudur !");

@@ -36,7 +36,7 @@
 // console.log(total);
 
 // Task 05
-// let num = +"630" //prompt("3 reqemli istenilen eded daxil edin :");
+// let num = +"45" //prompt("3 reqemli istenilen eded daxil edin :");
 // let total = 0;
 // let i = 100
 // while (i < 1000) {
@@ -48,11 +48,50 @@
 
 // console.log(total);
 
+//Task 06
+// let n = +"45" //prompt("Bir ədəd daxil edin:");
+// while (n > 1) {
+//     let i = 1
+//     let cnt = 0
+//     while (i <= n) {
+//         if (n % i === 0) {
+//             cnt++;
+//         }
+//         i++
+//     }
+//     if (cnt === 2) {
+//         console.log(n);
+//     }
+//     n--;
+// }
 
 //for
 //Task 07
-let hasil = 1
-for (let i = 1; i <= 10; i++) {
-    hasil *= i;
+// let hasil = 1
+// for (let i = 1; i <= 10; i++) {
+//     hasil *= i;
+// }
+// console.log(hasil);
+
+//Task 08
+// let str = "Hello World";
+// let result = ""
+// for (let i = 0; i < str.length; i++) {
+//     let index = str.length - 1 - i;
+//     result += str[index]
+// }
+// console.log(result);
+
+//Task 09
+let str = "Hell.o World";
+let index = -1;
+for (let i = 0; i < str.length; i++) {
+    if (str[i] === ".") { 
+        index = i;
+        break
+    }
 }
-console.log(hasil);
+if (index !== -1) {
+    console.log(`Noqte buradadir :  ${index}`);
+    
+}
