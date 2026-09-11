@@ -4,7 +4,7 @@
 // while (number < 100) {
 //     number += 7
 //     console.log(number);
-    
+
 // }
 
 //Task 02
@@ -83,15 +83,114 @@
 // console.log(result);
 
 //Task 09
-let str = "Hell.o World";
-let index = -1;
-for (let i = 0; i < str.length; i++) {
-    if (str[i] === ".") { 
-        index = i;
-        break
-    }
-}
-if (index !== -1) {
-    console.log(`Noqte buradadir :  ${index}`);
+// let str = "Hell.o World";
+// let index = -1;
+// for (let i = 0; i < str.length; i++) {
+//     if (str[i] === ".") {
+//         index = i;
+//         break
+//     }
+// }
+// if (index !== -1) {
+//     console.log(`Noqte buradadir :  ${index}`);
+
+// }
+
+//Task 10
+// let str = "Baki Azerbaycan";
+// let result = "Reqem yoxdur";
+// for (let i = 0; i < str.length; i++){
+//     if (!isNaN(str[i]) && str[i] !== ".") {
+//         result = "Reqem var"
+//         break;
+//     }
+// }
+// console.log(result);
+
+//Task 11
+// let str = "level";
+// let isPalendrom = "true";
+
+// let text = str.toLowerCase();
+// let leng = text.length;
+
+// for (let i = 0; i < leng / 2; i++){
+//     if (text[i] !== text[leng - 1 - i]) {
+//         isPalendrom = false;
+//         break;
+//     }
+// }
+// console.log(isPalendrom);
+
+//Task 12
+// for (let i = 100; i <= 500; i++) {
+//   if (i % 5 === 2) {
+//     console.log(i);
+//   }
+// }
+
+//Task 13
+// let num = "-455";
+// let sum = 0;
+
+// for (let i = 0; i < num.length; i++){
+//     if (num[i] === "-") {
+//         continue;
+//     }
+//     sum +=  +num[i];
+// }
+// console.log(sum);
+
+//Task 14
+// let num = +"45";
+
+// for (let i = num; i >= 1; i--) {
+//     if (num % i === 0) {
+//         console.log(i);
+        
+//     }
+// }
+
+//Task 15
+// for (let i = 1; i <= 47; i++){
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log(i);
+//     }
+// }
+
+
+//TAsk 16
+// let text = "Test";
+// let result = "";
+
+// for (let i = 0; i < text.length; i++){
+//     result += text[i];
+//     if (i !== text.length -1) {
+//         result += "-";
+//     }
+// }
+// console.log(result);
+
+//Task 17
+// let input = "Ba ku A zer ba ijan"
+// let total = 0;
+// for (let i = 0; i < input.length; i++) {
+//     if (input[i] === " ") {
+//         total++;
+//     }
+// }
+
+// console.log(total);
+
+
+//Task 18
+// let num = +"10";
+// let num1 = +"20";
+
+// let min = Math.min(num, num1);
+// let max = Math.max(num, num1);
+
+// for (let i = min; i <= max; i++){
+//     console.log(i*i);
     
-}
+// }
