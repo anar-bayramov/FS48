@@ -182,46 +182,92 @@
 // course.isCompleted = true;
 // console.log(course);
 
+// TAsk 16
+// function Product(title, price, discount = 0) {
+//   this.title = title;
+//   this.price = price;
+//   this.discount = discount;
+//   this.getFinalPrice = function () {
+//     return this.price - (this.price * this.discount / 100);
+//   };
+// }
+
+// const product1 = new Product("Telefon", 1800, 15);
+// const product2 = new Product("Komputer", 2500);
+// console.log(product1.getFinalPrice());
+// console.log(product2.getFinalPrice());
+
+// Task 19
+// function Student(name,grades=[]) {
+//   this.name = name;
+//   this.grades = grades;
+
+//   this.addGrade = function (grade) {
+//     this.grades.push(grade);
+//   };
+
+//   this.getAverage = function () {
+//     if (this.grades.length === 0) {
+//       return 0
+//     }
+//     const total = this.grades.reduce((sum, grade) => {
+//       return sum + grade;
+
+//     }, 0);
+//     return total / this.grades.length;
+//   }
+
+// }
+// const student1 = new Student("Eli");
+// student1.addGrade(80);
+// student1.addGrade(90);
+// student1.addGrade(100);
+
+// console.log(student1.name);
+// console.log(student1.grades);
+// console.log(student1.getAverage());
+
+
 // Task 20
-const store = {
-  inventory: {
-    phone: 10,
-    laptop: 5,
-    tablet: 8,
-  },
+// const store = {
+//   inventory: {
+//     phone: 10,
+//     laptop: 5,
+//     tablet: 8,
+//   },
 
-  sellItem(itemName, quantity) {
-    if (this.inventory[itemName] && this.inventory[itemName] >= quantity) {
-      this.inventory[itemName] -= quantity;
-      console.log(
-        `Uğurlu satış: ${quantity} ədəd ${itemName} satıldı. Qaldı: ${this.inventory[itemName]}`,
-      );
-    } else {
-      console.log(
-        `Xəbərdarlıq: Anbarda kifayət qədər ${itemName} yoxdur və ya məhsul mövcud deyil!`,
-      );
-    }
-  },
+//   sellItem(itemName, quantity) {
+//     if (this.inventory[itemName] && this.inventory[itemName] >= quantity) {
+//       this.inventory[itemName] -= quantity;
+//       console.log(
+//         `Uğurlu satış: ${quantity} ədəd ${itemName} satıldı. Qaldı: ${this.inventory[itemName]}`,
+//       );
+//     } else {
+//       console.log(
+//         `Xəbərdarlıq: Anbarda kifayət qədər ${itemName} yoxdur və ya məhsul mövcud deyil!`,
+//       );
+//     }
+//   },
 
-  addItem(itemName, quantity) {
-    if (this.inventory[itemName]) {
-      this.inventory[itemName] += quantity;
-    } else {
-      this.inventory[itemName] = quantity;
-    }
-    console.log(
-      `Əlavə olundu: ${quantity} ədəd ${itemName}. Ümumi say: ${this.inventory[itemName]}`,
-    );
-  },
+//   addItem(itemName, quantity) {
+//     if (this.inventory[itemName]) {
+//       this.inventory[itemName] += quantity;
+//     } else {
+//       this.inventory[itemName] = quantity;
+//     }
+//     console.log(
+//       `Əlavə olundu: ${quantity} ədəd ${itemName}. Ümumi say: ${this.inventory[itemName]}`,
+//     );
+//   },
 
-  listInventory() {
-    console.log("- Anbarda olan məhsullar -");
-    for (const [item, count] of Object.entries(this.inventory)) {
-      console.log(`${item}: ${count} ədəd`);
-    }
-  },
-};
+//   listInventory() {
+//     console.log("- Anbarda olan məhsullar -");
+//     for (const [item, count] of Object.entries(this.inventory)) {
+//       console.log(`${item}: ${count} ədəd`);
+//     }
+//   },
+// };
 
-store.sellItem(`phone`, 8);
-store.addItem(`laptop`, 4);
-store.listInventory();
+// store.sellItem(`phone`, 8);
+// store.addItem(`laptop`, 4);
+// store.listInventory();
