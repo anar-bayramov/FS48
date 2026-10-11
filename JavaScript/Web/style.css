@@ -1,0 +1,789 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Reset */
+a{
+    text-decoration: none;
+    color: black;
+}
+img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Nav */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: whitesmoke;
+}
+
+/* Logo */
+.logo{
+    font-weight: bold;
+}
+.logo-black{
+    color: #000;
+}
+.logo-blue{
+    color: #2563eb;
+}
+
+/* Links */
+.nav-links{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+.nav-links li :hover{
+    color: blue;
+}
+
+/* Button */
+.card-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2563eb; 
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 14px;
+    border: none; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.card-btn:hover{
+    background-color: #1d4ed8;
+}
+
+
+/* Səbət Sidebar Paneli */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Başlanğıcda ekrandan kənarda gizlidir */
+    width: 380px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease-in-out;
+}
+
+/* Panel açıldığında aktiv klassı */
+.cart-sidebar.active {
+    right: 0;
+}
+
+/* Səbət Başlığı */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.cart-header h3 {
+    font-size: 18px;
+    color: #111827;
+}
+
+/* Bağlama (X) Düyməsi */
+.close-cart-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6b7280;
+    transition: color 0.2s;
+}
+
+.close-cart-btn:hover {
+    color: #111827;
+}
+
+/* Səbət Məzmun Sahəsi */
+.cart-body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.empty-cart-text {
+    color: #6b7280;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Səbət Alt Hissəsi */
+.cart-footer {
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.checkout-btn {
+    width: 100%;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.checkout-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+
+/* Arxa Fon Qaraltması (Overlay) */
+/* --- Modern Səbət Sidebar Stili --- */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 400px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cart-sidebar.active {
+    right: 0;
+}
+
+/* Səbət Başlığı */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 24px;
+    border-bottom: 1px solid #f3f4f6;
+    background-color: #fafafa;
+}
+.cart-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+}
+.cart-count-badge {
+    font-size: 12px;
+    background-color: #eff6ff;
+    color: #2563eb;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.close-cart-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #9ca3af;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+.close-cart-btn:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+/* Səbət Məzmunu */
+.cart-body {
+    flex: 1;
+    padding: 20px 24px;
+    overflow-y: auto;
+}
+
+/* Səbətdəki məhsul kartı */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px;
+    background: #f9fafb;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    position: relative;
+    border: 1px solid #f3f4f6;
+}
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cart-item-details {
+    flex: 1;
+}
+.cart-item-details h4 {
+    font-size: 14px;
+    color: #111827;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.cart-item-price {
+    font-size: 13px;
+    color: #2563eb;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-actions button {
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+.cart-item-actions button:hover {
+    background-color: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+.cart-item-actions span {
+    font-size: 13px;
+    font-weight: 600;
+    min-width: 18px;
+    text-align: center;
+}
+.remove-item-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.remove-item-btn:hover {
+    color: #ef4444;
+}
+
+/* Səbət Aşağı Hissəsi (Footer & Inputs) */
+.cart-footer {
+    padding: 20px 24px 24px 24px;
+    background-color: #fafafa;
+    border-top: 1px solid #f3f4f6;
+}
+.cart-user-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+.cart-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 13px;
+    outline: none;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+.cart-input:focus {
+    border-color: #2563eb;
+}
+.promo-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+.promo-btn {
+    background-color: #111827;
+    color: #fff;
+    border: none;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.promo-btn:hover {
+    background-color: #374151;
+}
+.promo-msg {
+    font-size: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.promo-msg.success { color: #16a34a; }
+.promo-msg.error { color: #dc2626; }
+
+.cart-summary-box {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.cart-summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #4b5563;
+}
+.discount-row {
+    color: #16a34a;
+    font-weight: 600;
+}
+.total-row {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+    border-top: 1px dashed #e5e7eb;
+    padding-top: 10px;
+    margin-top: 4px;
+}
+
+.checkout-btn {
+    width: 100%;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+.checkout-btn:hover {
+    background-color: #1d4ed8;
+}
+.checkout-btn:active {
+    transform: scale(0.98);
+}
+
+/* Sebet bitis */
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding: 40px 10px;
+    height: 350px;
+    background-color: rgb(234, 237, 239);
+
+}
+/* Left */
+.hero-left{
+    margin-left: 20px;
+    padding-bottom: 100px;
+}
+.text-svg{
+    fill: #2563eb;
+}
+.text-top{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.hero-text{
+    width: 180px;
+}
+.text-blue{
+    color: #1d4ed8;
+}
+.hero-description{
+    color: #6f6e6e;
+    font-size: 12px;
+    margin: 15px 0px;
+}
+
+.hero-buttons{
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.creator{
+    margin-bottom: 20px;
+}
+
+.hero-stats{
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+.hero-box p{
+    font-size: 12px;
+}
+
+
+/* Right */
+.hero-right{
+    margin-left: 150px;
+    padding-bottom: 180px;
+}
+.circle-box,
+.circle-box1{
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #d8dadd70;
+    transform: translate(0%,-25%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+}
+.circle-box1{
+    width: 200px;
+    height: 200px;
+    transform: translate(20%, -15%);
+}
+
+/* .photos{
+    padding-top: -510px;
+    padding-left: 30px;
+} */
+.img-center{
+    border-radius: 15%;
+    width: 230px;
+    height: 200px;
+    position: absolute;
+    transform: translate(40px,-30px);
+    
+}
+.img-top{
+    border-radius: 25%;
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    transform: translate(220px,-180px);
+    rotate: 25deg;
+    z-index: 2000;
+    border: 2px solid rgb(19, 18, 18);
+
+}
+.img-bottom{
+    border-radius: 25%;
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    transform: translate(280px, 85px);
+    rotate: 12deg;
+    z-index: 2000;
+    border: 2px solid rgb(19, 18, 18);
+}
+
+.warranty,
+.delivery{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    position: absolute;
+    display: flex;
+    transform: translate(-50px, 10px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    z-index: 100;
+}
+.check path{
+    fill: #22c55e;
+}
+.delivery{
+    position: absolute;
+    transform: translate(20px,170px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.online-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+/* Products */
+.products-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 40px 20px;
+}
+.product-filter{
+    margin-right: 100px;
+    background-color: whitesmoke;
+    width: auto;
+    border-radius: 12px;
+}
+.product-btn{
+    gap: 8px;
+    background-color: #979da800; 
+    color: #575555;
+    padding: 10px 18px;
+    font-size: 14px;
+    border: none; 
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.product-btn:hover{
+    background-color: #1d4ed8;
+    color: #fff;
+}
+.mehsullar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+}
+.products{
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.product-photo{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f8fafc;
+}
+
+.sale {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ef4444;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.product-detailing {
+    padding: 20px;
+}
+
+.catalog {
+    font-size: 11px;
+    font-weight: bold;
+    color: #2563eb;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 3px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #111827;
+    font-weight: bold;
+}
+
+/* Səbətə atma düyməsi */
+.product-add {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.add-svg{
+    fill:#fff
+}
+
+.product-add:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+.footer {
+    background-color: #111827;
+    color: #f9fafb;
+    padding-top: 60px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-col .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-desc {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.5;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col ul li a,
+.footer-col p {
+    font-size: 14px;
+    color: #9ca3af;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-col ul li a:hover {
+    color: #2563eb;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    fill:white
+}
+
+.social-links a {
+    width: 20px;
+    height: 20px;
+    background-color: #1f2937;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* Responsiv Dizayn (Mobil və Planşetlər üçün) */
+@media (max-width: 900px) {
+    .mehsullar{
+        grid-template-columns: repeat(2fr,1fr);
+    }
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .mehsullar{
+        grid-template-columns: repeat(3,1fr);
+    }
+} 
+
+@media (max-width: 550px) {
+    .mehsullar{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
