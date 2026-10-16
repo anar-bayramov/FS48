@@ -177,6 +177,7 @@
 
 // console.log(num1);
 
+
 // Task 34
 // let numbers = [
 //     [3, 9],

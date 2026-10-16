@@ -16,7 +16,7 @@
 // };
 
 // const onError = (msg) => {
-//   console.log(`msg`);
+//   console.log(`Xeta :${msg}`);
 // };
 
 // const applyCoupon = (code, totalPrice, onSuccess, onError) => {
@@ -28,7 +28,7 @@
 //   }
 // };
 
-// applyCoupon("KOD10", 35, onSuccess, onError);
+// applyCoupon("KOD20", 35, onSuccess, onError);
 
 // Task 03
 // const onWin = (heroName, damage) => {
