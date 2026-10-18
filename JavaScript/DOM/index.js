@@ -72,7 +72,7 @@
 //   if (username.value.trim() === "") {
 //     console.log("Xəta: Input boşdur!");
 //   } else {
-//     console.log("Uğurludur!");
+//     console.log(`Uğurludur!`);
 //   }
 // });
 
@@ -88,6 +88,20 @@
 //   box.style.opacity = "1";
 // });
 
+// Task 08
+// const btn = document.querySelectorAll(".btn");
+// const priceElement = document.getElementById("total-price");
+// let total = 0;
+
+// btn.forEach( button => {
+//     button.addEventListener("click", function () {
+//         const price = Number(this.dataset.price);
+//         total += price;
+//         priceElement.textContent = total
+//     })
+// });
+
+
 // Task 09
 
 // const input = document.querySelector("#input");
@@ -97,3 +111,4 @@
 //     console.log("Enter düyməsinə basıldı!");
 //   }
 // });
+

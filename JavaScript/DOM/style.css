@@ -38,3 +38,20 @@
   transition: opacity 0.3s;
   text-align: center;
 } */
+
+/* TAsk 08 */
+/* .btn{
+  padding: 10px;
+  background-color: beige;
+  border: 2px solid black;
+} */
+
+
+/* Bolme 2 */
+
+.div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
