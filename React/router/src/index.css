@@ -1,0 +1,14 @@
+nav{
+    display: flex;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a.active {
+    color: red !important;
+    font-weight: bold;
+}
+
+
