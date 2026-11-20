@@ -33,11 +33,22 @@
 
 // ==============Task 04==============
 
-import { configureStore } from '@reduxjs/toolkit'
-import scoreReducer from './score'
+// import { configureStore } from '@reduxjs/toolkit'
+// import scoreReducer from './score'
+
+// export const store = configureStore({
+//     reducer: {
+//         score : scoreReducer
+//     }
+// })
+
+// ==============Task 05==============
+
+import { configureStore } from "@reduxjs/toolkit";
+import todoReducer from './todoSlice';
 
 export const store = configureStore({
     reducer: {
-        score : scoreReducer
-    }
+        todo: todoReducer
+    },
 })

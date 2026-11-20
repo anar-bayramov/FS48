@@ -85,24 +85,54 @@
 
 // ==============Task 04==============
 
-import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement, reset } from "./Redux/score";
+// import { useSelector, useDispatch } from "react-redux";
+// import { increment, decrement, reset } from "./Redux/score";
+// function App() {
+//     const count = useSelector(
+//         (state) => state.score.value
+//     );
+
+//     const dispatch = useDispatch();
+
+//     return (
+//       <div>
+//         <h1>{count}</h1>
+
+//         <button onClick={() => dispatch(increment())}>Artir</button>
+//         <button onClick={() => dispatch(decrement())}>Azalt</button>
+//         <button onClick={() => dispatch(reset())}>Sifirla</button>
+//       </div>
+//     );
+// }
+
+// export default App
+
+
+// ==============Task 05==============
+
+import { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux';
+
+import { addTodo, revomeTodo, toogleTodo, setFilter } from './Redux/todoSlice';
+
 function App() {
-    const count = useSelector(
-        (state) => state.score.value
-    );
+  const [input, setInput] = useState();
+  const [todos, setTodos] = useSelector((state) => state.todo);
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    return (
-      <div>
-        <h1>{count}</h1>
-
-        <button onClick={() => dispatch(increment())}>Artir</button>
-        <button onClick={() => dispatch(decrement())}>Azalt</button>
-        <button onClick={() => dispatch(reset())}>Sifirla</button>
-      </div>
-    );
+  const handleAdd = () => {
+    if (input.trim() !== "") {
+      dispatch(addTodo(input))
+      setInput("")
+    }
+  }
 }
+
+return (
+  <div>
+
+  </div>
+)
 
 export default App
